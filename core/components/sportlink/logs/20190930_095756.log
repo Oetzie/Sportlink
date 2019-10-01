@@ -1,0 +1,13 @@
+INFO:: Start import process at 30-09-2019 09:57:56.
+INFO:: Import process for `Teams`.
+INFO::  - Created 0 teams.
+INFO::  - Updated 17 teams.
+INFO:: Import process for `Competitions`.
+INFO::  - Created 0 competitions.
+INFO::  - Updated 32 competitions.
+INFO::  - Created 0 results.
+INFO::  - Updated 0 results.
+INFO::  - Created 0 matches.
+INFO::  - Updated 0 matches.
+INFO:: End import process at 30-09-2019 09:57:56.
+INFO:: Total execution time in seconds: 0.30.

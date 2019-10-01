@@ -1,0 +1,87 @@
+{
+    "name": "Sportlink",
+    "lowCaseName": "sportlink",
+    "description": "A sportlink solution for MODX Revolution.",
+    "author": "Oetzie.nl",
+    "version": "1.1.0-pl",
+    "package":{
+        "menus": [{
+            "text": "sportlink",
+            "description": "sportlink.desc",
+            "parent": "components",
+            "action": "home",
+            "permissions": "sportlink"
+        }],
+        "elements": {
+            "chunks": [{
+                "name": "sportlinkCompetitionItemTpl",
+                "file": "competition/item.chunk.tpl"
+            },{
+                "name": "sportlinkCompetitionWrapperTpl",
+                "file": "competition/wrapper.chunk.tpl"
+            },{
+                "name": "sportlinkCompetitionEmptyTpl",
+                "file": "competition/empty.chunk.tpl"
+            },{
+                "name": "sportlinkMatchesItemTpl",
+                "file": "matches/item.chunk.tpl"
+            },{
+                "name": "sportlinkMatchesWrapperTpl",
+                "file": "matches/wrapper.chunk.tpl"
+            },{
+                "name": "sportlinkMatchesEmptyTpl",
+                "file": "matches/empty.chunk.tpl"
+            }],
+            "snippets": [{
+                "name": "SportlinkCompetition",
+                "file": "sportlinkcompetition.snippet.php"
+            },{
+                "name": "SportlinkMatches",
+                "file": "sportlinkmatches.snippet.php"
+            }]
+        },
+        "systemSettings": [{
+            "key": "branding_url",
+            "value": "//www.oetzie.nl"
+        },{
+            "key": "branding_url_help",
+            "value": "//www.oetzie.nl"
+        },{
+            "key": "api_client_id"
+        },{
+            "key": "club"
+        },{
+            "key": "cronjob",
+            "type": "combo-boolean",
+            "value": "1"
+        },{
+            "key": "cronjob_hash"
+        },{
+            "key": "default_sources",
+            "value": "teams,competitions"
+        },{
+            "key": "log_email"
+        },{
+            "key": "log_lifetime",
+            "value": "7"
+        },{
+            "key": "log_send",
+            "type": "combo-boolean",
+            "value": "0"
+        },{
+            "key": "logo_path",
+            "value": "/uploads/sportlink/"
+        }]
+    },
+    "build":{
+        "readme": "docs/readme.txt",
+        "license": "docs/license.txt",
+        "changelog": "docs/changelog.txt",
+        "resolver": {
+            "after": [
+                "tables.resolver.php",
+                "permissions.resolver.php"
+            ]
+        }
+    }
+}
