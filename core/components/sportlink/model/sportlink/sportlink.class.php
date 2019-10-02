@@ -53,6 +53,7 @@ class Sportlink
             'version'           => '1.1.0',
             'branding_url'      => $this->modx->getOption('sportlink.branding_url', null, ''),
             'branding_help_url' => $this->modx->getOption('sportlink.branding_url_help', null, ''),
+            'cronjob'           => (bool) $this->modx->getOption('sportlink.cronjob', null, false),
             'club'              => $this->modx->getOption('sportlink.club')
         ], $config);
 
